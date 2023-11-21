@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+    <head>
+        {{> head/head }}
+    </head>
+
+    <body class="body">
+        %=symbols=%
+
+        <div class="flex flex-col h-screen">
+            <div class="document__header">
+                <!-- begin::header -->
+                {{> header/header }}
+                <!-- end::header -->
+            </div>
+
+            <!-- begin::page-content -->
+            <div class="flex-auto">
+                <section class="section">
+                    <div class="container mx-auto py-6">
+                        <!-- begin::html -->
+                        {{> html/html }}
+                        <!-- end::html -->
+                    </div>
+                </section>
+            </div>
+            <!-- begin::end-content -->
+
+            <div class="flex-shrink-0">
+                <!-- begin::footer -->
+                {{> footer/footer }}
+                <!-- end::footer -->
+            </div>
+        </div>
+
+        <!-- begin::scripts -->
+        {{> assets/script }}
+        <!-- end::scripts -->
+    </body>
+</html>
