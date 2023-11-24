@@ -1,13 +1,17 @@
-<div class="bg-event p-8 pb-7 flex flex-col gap-7 mt-3">
+<div class="bg-event p-8 pb-7 flex flex-col gap-7 group">
     <div class="relative overflow-hidden">
         <div class="h-[360px] flex justify-center items-center">
-            <img class="min-w-full h-auto" src="https://placehold.co/600x600" alt="" />
+            <img
+                class="min-w-full w-auto h-full max-w-none object-cover"
+                src="https://placehold.co/600x600"
+                alt=""
+            />
         </div>
         <div
-            class="absolute top-[137px] bottom-[99px] left-9 right-[69px] bg-yellow-400 w-[246px] h-[70px] flex justify-center items-center text-2xl font-semibold text-black"
+            class="absolute inset-0 flex justify-center items-center bg-[#000000] bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity"
         >
             <button
-                class="hover:bg-primary hover:border-primary hover:text-black text-white text-2xl font-medium tracking-[1.2px] bg-[#e9d7a71a] border border-[#FDE8B3] h-[78px] w-full flex items-center justify-center pt-1"
+                class="transition-colors bg-yellow-400 w-[246px] hover:bg-primary hover:border-primary hover:text-black text-white text-2xl font-medium tracking-[1.2px] bg-[#e9d7a71a] border border-[#FDE8B3] h-[78px] flex items-center justify-center pt-1"
             >
                 Place a bid
             </button>
@@ -15,14 +19,18 @@
     </div>
     <div class="flex flex-col gap-10">
         <div class="flex flex-col gap-7">
-            <div class="flex justify-between">
-                <div class="flex gap-4">
+            <div class="flex justify-between gap-4">
+                <div class="flex gap-4 min-w-0">
                     <div class="w-[54px] h-[54px] rounded-full shrink-0 bg-[#42495B]">
                         <img src="" alt="" />
                     </div>
-                    <div class="flex flex-col gap-2">
-                        <div class="text-white-100 text-lg font-medium">Virtual Art</div>
-                        <div class="text-violet-light text-sm font-normal">by @wzard</div>
+                    <div class="flex flex-col gap-2 min-w-0">
+                        <div class="text-white-100 text-lg font-medium truncate">
+                            Virtual Art Virtual Art Virtual Art
+                        </div>
+                        <div class="text-violet-light text-sm font-normal truncate">
+                            by @wzard by @wzard by @wzard
+                        </div>
                     </div>
                 </div>
                 <div class="flex gap-[9px] items-center">
