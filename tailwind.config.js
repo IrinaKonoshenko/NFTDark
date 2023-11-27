@@ -9,10 +9,15 @@ module.exports = {
                 'white-100': '#F5FBF2',
                 'violet-light': '#BDAAC1',
                 primary: '#FFCE4E',
+                hover: '#A77E12',
             },
             fontFamily: {
                 oxanium: ['Oxanium', 'sans-serif'],
             },
+        },
+        screens: {
+            mobile: { min: '300px', max: '767px' },
+            desctop: { min: '768px', max: '1900px' },
         },
     },
     plugins: [],
