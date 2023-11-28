@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+    <head>
+        {{> head/head }}
+    </head>
+
+    <body class="body bg-bg">
+        %=symbols=%
+
+        <div class="flex flex-col h-screen">
+            <!-- begin::header -->
+            {{> header/header }}
+            <!-- end::header -->
+
+            <!-- begin::page-content -->
+            <div class="flex-auto">
+                <section>
+                    <div class="container mx-auto py-12">
+                        <!-- begin::hero -->
+                        {{> hero/hero }}
+                        <!-- end::hero -->
+                    </div>
+                </section>
+            </div>
+            <!-- begin::end-content -->
+
+            <div class="flex-shrink-0">
+                <!-- begin::footer -->
+                {{> footer/footer }}
+                <!-- end::footer -->
+            </div>
+        </div>
+
+        <!-- begin::scripts -->
+        {{> assets/script }}
+        <!-- end::scripts -->
+    </body>
+</html>

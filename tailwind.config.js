@@ -10,14 +10,14 @@ module.exports = {
                 'violet-light': '#BDAAC1',
                 primary: '#FFCE4E',
                 hover: '#A77E12',
+                bg: '#1C121F',
             },
             fontFamily: {
                 oxanium: ['Oxanium', 'sans-serif'],
             },
-        },
-        screens: {
-            mobile: { min: '300px', max: '767px' },
-            desctop: { min: '768px', max: '1900px' },
+            backgroundImage: {
+                hero: "url('../../static/img/content/patern.jpg')",
+            },
         },
     },
     plugins: [],
