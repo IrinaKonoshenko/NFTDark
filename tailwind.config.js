@@ -11,6 +11,7 @@ module.exports = {
                 primary: '#FFCE4E',
                 hover: '#A77E12',
                 bg: '#1C121F',
+                blur: '#4f464e',
             },
             fontFamily: {
                 oxanium: ['Oxanium', 'sans-serif'],
