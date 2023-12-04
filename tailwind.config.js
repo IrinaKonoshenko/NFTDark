@@ -17,7 +17,7 @@ module.exports = {
                 oxanium: ['Oxanium', 'sans-serif'],
             },
             backgroundImage: {
-                hero: "url('../../static/img/content/patern.jpg')",
+                gradient: 'linear-gradient(93deg, #D73795 0, #E09EC0 100%);',
             },
         },
     },
