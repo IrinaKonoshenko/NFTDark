@@ -12,6 +12,7 @@ module.exports = {
                 hover: '#A77E12',
                 bg: '#1C121F',
                 blur: '#4f464e',
+                btn: '#E7B226',
             },
             fontFamily: {
                 oxanium: ['Oxanium', 'sans-serif'],
