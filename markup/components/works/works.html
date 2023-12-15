@@ -1,34 +1,62 @@
-<section class="pt-[80px] py-[55px]">
+<section class="pt-[80px] py-[55px] xl:pt-[185px]">
     <div class="container px-4 mx-auto">
         <div class="flex flex-col justify-center items-center">
-            <div class="text-white-100 font-oxanium text-center text-4xl font-bold">How it works</div>
-            <ul class="pt-[52px] grid grid-cols-1 gap-7">
-                <li class="flex flex-col items-center justify-center gap-6">
-                    <div class="w-[72px] h-[72px] rounded-full bg-[#372839] flex justify-center items-center">
-                        {{Icon iconName='wallet' }}
+            <div
+                class="text-white-100 font-oxanium text-center text-4xl xl:text-[64px] font-bold xl:leading-[130px]"
+            >
+                How it works
+            </div>
+            <ul class="pt-[52px] grid grid-cols-1 gap-7 xl:gap-[57px] xl:flex xl:justify-between xl:pt-6">
+                <li class="flex flex-col items-center justify-center gap-6 xl:gap-[57px] xl:flex-row">
+                    <div class="flex flex-col gap-6 items-center xl:gap-8">
+                        <div
+                            class="w-[72px] xl:w-[106px] h-[72px] xl:h-[106px] rounded-full bg-[#372839] flex justify-center items-center"
+                        >
+                            {{Icon iconName='wallet' className="!w-9 !h-9 xl:!w-12 xl:!h-12"}}
+                        </div>
+                        <div class="text-primary text-2xl font-semibold capitalize">Set up your wallet</div>
                     </div>
-                    <div class="text-primary text-2xl font-semibold capitalize">Set up your wallet</div>
-                    <div class="flex justify-center">{{Icon iconName='arrow-down' }}</div>
+                    <div class="flex justify-center xl:transform xl:-rotate-90 xl:translate-y-[-30px]">
+                        {{Icon iconName='arrow-down' }}
+                    </div>
                 </li>
-                <li class="flex flex-col items-center justify-center gap-6">
-                    <div class="w-[72px] h-[72px] rounded-full bg-[#372839] flex justify-center items-center">
-                        {{Icon iconName='collection' }}
+                <li class="flex flex-col items-center justify-center gap-6 xl:gap-[57px] xl:flex-row">
+                    <div class="flex flex-col gap-6 items-center xl:gap-8">
+                        <div
+                            class="w-[72px] xl:w-[106px] h-[72px] xl:h-[106px] rounded-full bg-[#372839] flex justify-center items-center"
+                        >
+                            {{Icon iconName='collection' className="!w-9 !h-9 xl:!w-12 xl:!h-12"}}
+                        </div>
+                        <div class="text-primary text-2xl font-semibold capitalize">
+                            Create your collection
+                        </div>
                     </div>
-                    <div class="text-primary text-2xl font-semibold capitalize">Create your collection</div>
-                    <div class="flex justify-center">{{Icon iconName='arrow-down' }}</div>
+                    <div class="flex justify-center xl:-rotate-90 xl:translate-y-[-30px]">
+                        {{Icon iconName='arrow-down' }}
+                    </div>
                 </li>
-                <li class="flex flex-col items-center justify-center gap-6">
-                    <div class="w-[72px] h-[72px] rounded-full bg-[#372839] flex justify-center items-center">
-                        {{Icon iconName='add' }}
+                <li class="flex flex-col items-center justify-center gap-6 xl:gap-[57px] xl:flex-row">
+                    <div class="flex flex-col gap-6 items-center xl:gap-8">
+                        <div
+                            class="w-[72px] xl:w-[106px] h-[72px] xl:h-[106px] rounded-full bg-[#372839] flex justify-center items-center"
+                        >
+                            {{Icon iconName='add' className="!w-9 !h-9 xl:!w-12 xl:!h-12"}}
+                        </div>
+                        <div class="text-primary text-2xl font-semibold capitalize">Add your NFTs</div>
                     </div>
-                    <div class="text-primary text-2xl font-semibold capitalize">Add your NFTs</div>
-                    <div class="flex justify-center">{{Icon iconName='arrow-down' }}</div>
+                    <div class="flex justify-center xl:-rotate-90 xl:translate-y-[-30px]">
+                        {{Icon iconName='arrow-down' }}
+                    </div>
                 </li>
-                <li class="flex flex-col items-center justify-center gap-6">
-                    <div class="w-[72px] h-[72px] rounded-full bg-[#372839] flex justify-center items-center">
-                        {{Icon iconName='sales' }}
+                <li class="flex flex-col items-center justify-center gap-6 xl:gap-[57px] xl:flex-row">
+                    <div class="flex flex-col gap-6 items-center xl:gap-8">
+                        <div
+                            class="w-[72px] xl:w-[106px] h-[72px] xl:h-[106px] rounded-full bg-[#372839] flex justify-center items-center"
+                        >
+                            {{Icon iconName='sales' className="!w-9 !h-9 xl:!w-12 xl:!h-12"}}
+                        </div>
+                        <div class="text-primary text-2xl font-semibold capitalize">List them for sale</div>
                     </div>
-                    <div class="text-primary text-2xl font-semibold capitalize">List them for sale</div>
                 </li>
             </ul>
         </div>
