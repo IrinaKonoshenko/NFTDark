@@ -1,8 +1,8 @@
-<section class="xl:pl-[70px] xl:mt-[140px]">
+<section class="xl:mt-[-103px] xl:pt-[274px] overflow-hidden pt-[52px] pb-[83px]">
     <div
-        class="relative px-4 bg-[url('../../static/img/content/patern.jpg')] w-full h-auto after:bg-gradient-to-b after:from-[#1C121F] after:to-[#1c121f36] after:inset-0 after:absolute md:bg-none xl:flex xl:gap-10 xl:items-center"
+        class="relative bg-[url('../../static/img/content/patern.jpg')] w-full h-auto after:bg-gradient-to-b after:from-[#1C121F] after:to-[#1c121f36] after:inset-0 after:absolute md:bg-none xl:flex xl:gap-10 xl:items-center"
     >
-        <div class="container px-4 mx-auto relative z-10 pt-[52px] pb-[83px] xl:pt-8">
+        <div class="container px-4 mx-auto relative z-10">
             <div
                 class="font-oxanium font-bold text-[42px] md:text-[65px] xl:text-[85px] leading-[63px] md:leading-[93px] xl:leading-[130px] text-center text-white-100 md:text-center xl:text-start xl:max-w-[710px]"
             >
@@ -24,7 +24,11 @@
                 </button>
             </div>
             <div>{{> numbers/numbers }}</div>
+            <div
+                class="hidden xl:flex pl-[60px] pb-[100px] pr-[150px] pt-[240px] absolute top-[-274px] right-0 z-10 after:absolute after:inset-y-0 after:left-0 after:right-[-10000px] after:bg-blur/30 after:z-[-1]"
+            >
+                {{> card-block/card-block }}
+            </div>
         </div>
-        <div class="hidden md:hidden xl:hidden">{{> card-block/card-block }}</div>
     </div>
 </section>
