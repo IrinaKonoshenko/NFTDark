@@ -13,6 +13,7 @@ module.exports = {
                 bg: '#1C121F',
                 blur: '#4f464e',
                 btn: '#E7B226',
+                'light-violet': '#908294',
             },
             fontFamily: {
                 oxanium: ['Oxanium', 'sans-serif'],
