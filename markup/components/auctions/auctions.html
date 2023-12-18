@@ -1,17 +1,32 @@
-<section class="pt-[75px] bg-[#251928] pb-[58px] xl:pt-20 xl:pb-20">
+<section class="pt-[75px] bg-[#251928] pb-[58px] xl:pt-20 xl:pb-20 overflow-hidden">
     <div class="container px-4 mx-auto">
         <div class="flex justify-center">
             <div
-                class="text-white-100 z-10 text-4xl xl:text-[64px] font-oxanium font-bold relative text-center after:absolute after:-left-6 after:top-1/2 after:-translate-y-1/2 after:w-[84px] after:h-[84px] xl:after:w-[110px] xl:after:h-[110px] after:rounded-[50px] after:bg-[#8613A5] after:z-[-1]"
+                class="text-white-100 z-10 text-4xl xl:text-[64px] font-oxanium font-bold relative text-center after:absolute after:-left-6 after:top-1/2 after:-translate-y-1/2 after:w-[84px] after:h-[84px] xl:after:w-[110px] xl:after:h-[110px] after:rounded-[50px] after:bg-[#8613A5] after:z-[-1] xl:leading-[130px]"
             >
                 Live Auctions
             </div>
         </div>
-        <div
-            class="grid grid-cols-1 gap-12 mt-[68px] md:grid-cols-2 xl:grid-cols-3 xl:mt-[84px] xl:gap-[42px]"
-        >
-            {{> event-card/mob-event-card }} {{> event-card/mob-event-card1 }} {{> event-card/mob-event-card2
-            }}
+        <div class="swiper xl:overflow-visible relative" id="auctions-slider">
+            <div class="flex gap-7 absolute top-[-96px] right-0">
+                <div
+                    class="auctions-arrow auctions-arrow--left select-none w-[54px] h-[54px] rounded-full bg-[#201523] flex items-center justify-center cursor-pointer transition hover:opacity-25 relative active:top-px fill-white-100"
+                >
+                    {{Icon iconName='arrow-left'}}
+                </div>
+                <div
+                    class="auctions-arrow auctions-arrow--right select-none w-[54px] h-[54px] rounded-full bg-[#201523] flex items-center justify-center cursor-pointer transition hover:opacity-25 relative active:top-px fill-white-100"
+                >
+                    {{Icon iconName='arrow-right'}}
+                </div>
+            </div>
+            <div
+                class="grid grid-cols-1 gap-12 mt-[68px] md:grid-cols-2 xl:grid-cols-3 xl:mt-[84px] xl:gap-0 swiper-wrapper xl:flex"
+            >
+                {{> event-card/mob-event-card }} {{> event-card/mob-event-card1 }} {{>
+                event-card/mob-event-card2 }} {{> event-card/mob-event-card }} {{> event-card/mob-event-card1
+                }} {{> event-card/mob-event-card2 }}
+            </div>
         </div>
         <div class="flex justify-center items-center mt-[48px] xl:mt-[84px]">
             <button

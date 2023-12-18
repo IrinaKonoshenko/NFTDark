@@ -1,68 +1,24 @@
-<footer class="footer pt-[57px]">
-    <div class="container px-4 mx-auto">
-        <div class="flex justify-center items-center">
-            <img src="../../static/img/content/mob-logo.png" alt="" />
-        </div>
-        <div
-            class="mt-[51px] text-[#96839B] text-center text-lg font-medium leading-9 md:max-w-[450px] md:mx-auto"
-        >
-            Nec, enim sed lacus, magna pharetra. Phasellus tincidunt nulla pharetra gravida est.
-        </div>
-        <div class="mt-11 flex gap-[76px] md:text-center">
-            <div class="md:w-1/2">
-                <div class="text-white-100 text-2xl font-bold leading-9">About Us</div>
-                <ul class="mt-[18px]">
-                    <li>
-                        <a href="" class="text-[#96839B] text-lg font-medium leading-[50.5px]">About NFTs</a>
-                    </li>
-                    <li>
-                        <a href="" class="text-[#96839B] text-lg font-medium leading-[50.5px]">Live</a>
-                    </li>
-                    <li>
-                        <a href="" class="text-[#96839B] text-lg font-medium leading-[50.5px]">Auctions</a>
-                    </li>
-                    <li>
-                        <a href="" class="text-[#96839B] text-lg font-medium leading-[50.5px]">NFT Blog</a>
-                    </li>
-                    <li>
-                        <a href="" class="text-[#96839B] text-lg font-medium leading-[50.5px]">Activity</a>
-                    </li>
-                </ul>
+<footer class="footer pt-[57px] xl:pt-[108px] xl:pb-[116px]">
+    <div class="container px-4 mx-auto xl:w-[1440px]">
+        <div class="xl:flex justify-between xl:items-start xl:gap-[200px]">
+            <div class="xl:flex xl:gap-[51px] justify-start xl:items-start xl:flex-shrink-0">
+                <div class="flex justify-center items-center xl:pt-[7px]">
+                    <img
+                        class="w-[112px] h-[112px] xl:w-[194px] xl:h-[194px]"
+                        src="../../static/img/content/mob-logo.png"
+                        alt=""
+                    />
+                </div>
+                <div class="hidden xl:flex xl:flex-col xl:gap-[52px] xl:pt-[11px]">
+                    <div>{{> footer/text}}</div>
+                    <div>{{> footer/social-list }}</div>
+                    <div>{{> footer/copyr}}</div>
+                </div>
             </div>
-            <div class="md:w-1/2">
-                <div class="text-white-100 text-2xl font-bold leading-9">Support</div>
-                <ul class="mt-[18px]">
-                    <li>
-                        <a href="" class="text-[#96839B] text-lg font-medium leading-[50.5px]">
-                            Help & Support
-                        </a>
-                    </li>
-                    <li>
-                        <a href="" class="text-[#96839B] text-lg font-medium leading-[50.5px]"
-                            >Item Details</a
-                        >
-                    </li>
-                    <li>
-                        <a href="" class="text-[#96839B] text-lg font-medium leading-[50.5px]"
-                            >Author Profile</a
-                        >
-                    </li>
-                    <li>
-                        <a href="" class="text-[#96839B] text-lg font-medium leading-[50.5px]">Collection</a>
-                    </li>
-                </ul>
-            </div>
+            <div class="mt-[51px] xl:hidden">{{> footer/text}}</div>
+            <div class="mt-11 xl:mt-0 grow xl:pr-[99px]">{{> footer/menu }}</div>
+            <div class="mt-5 xl:hidden">{{> footer/social-list }}</div>
         </div>
-        <div class="mt-5">
-            <ul class="flex gap-10 justify-center items-center">
-                <li><a href="">{{Icon iconName='youtube' }}</a></li>
-                <li><a href="">{{Icon iconName='twitter' }}</a></li>
-                <li><a href="">{{Icon iconName='fasebook' }}</a></li>
-                <li><a href="">{{Icon iconName='google' }}</a></li>
-            </ul>
-        </div>
-        <div class="mt-[7px] mb-[11px] text-[#96839B] text-xl leading-9 text-center">
-            All rights reserved@2021
-        </div>
+        <div class="mt-[7px] mb-[11px] xl:hidden">{{> footer/copyr}}</div>
     </div>
 </footer>
