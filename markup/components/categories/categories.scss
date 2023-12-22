@@ -1,0 +1,6 @@
+#categories-slider .swiper-slide-active + .swiper-slide + .swiper-slide + .swiper-slide {
+    @apply opacity-25;
+}
+#categories-slider .swiper-slide {
+    @apply transition-all duration-700;
+}

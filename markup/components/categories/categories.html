@@ -1,4 +1,4 @@
-<section class="pt-[100px] pb-[74px] bg-[#251928] xl:py-[80px]">
+<section class="pt-[100px] pb-[74px] bg-[#251928] xl:py-[80px] xl:overflow-hidden">
     <div class="container px-4 mx-auto">
         <div class="flex justify-center">
             <div
@@ -8,8 +8,11 @@
                 By Categories
             </div>
         </div>
-        <div class="grid grid-cols-1 gap-6 mt-[54px] xl:mt-[84px] md:grid-cols-2 xl:grid-cols-4">
-            {{> card/mob-card }} {{> card/mob-card1 }} {{> card/mob-card2 }} {{> card/mob-card1 }}
+        <div class="mt-[54px] xl:mt-[84px] swiper xl:overflow-visible" id="categories-slider">
+            <div class="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-4 swiper-wrapper xl:flex xl:gap-0">
+                {{> card/mob-card }} {{> card/mob-card1 }} {{> card/mob-card2 }} {{> card/mob-card1 }} {{>
+                card/mob-card }} {{> card/mob-card1 }} {{> card/mob-card2 }} {{> card/mob-card1 }}
+            </div>
         </div>
         <div class="pt-[48px] xl:pt-[84px] flex justify-center items-center">
             <button

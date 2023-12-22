@@ -1,4 +1,4 @@
-<section class="pt-[76px] pb-[74px] pl-3 xl:pt-[174px] xl:pb-[104px]">
+<section class="pt-[76px] pb-[74px] pl-3 xl:pt-[174px] xl:pb-[104px] xl:overflow-hidden">
     <div class="container px-4 mx-auto">
         <div class="flex justify-center">
             <div
@@ -7,8 +7,25 @@
                 Popular Collections
             </div>
         </div>
-        <div class="mt-[52px] xl:mt-[110px] grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
-            {{> user-card/mob-user-card }} {{> user-card/mob-user-card1 }} {{> user-card/mob-user-card2 }}
+        <div class="mt-[52px] xl:mt-[110px] swiper relative xl:overflow-visible" id="collections-slider">
+            <div
+                class="hidden xl:flex gap-7 absolute top-1/2 -translate-y-1/2 inset-x-0 z-10 justify-between pointer-events-none"
+            >
+                <div
+                    class="pointer-events-auto collections-arrow collections-arrow--left select-none w-[72px] h-[72px] rounded-full bg-[#201523] flex items-center justify-center cursor-pointer transition hover:opacity-25 relative active:top-px fill-white-100"
+                >
+                    {{Icon iconName='arrow-left' iconWidth='72' iconHeight='72'}}
+                </div>
+                <div
+                    class="pointer-events-auto collections-arrow collections-arrow--right select-none w-[72px] h-[72px] rounded-full bg-[#201523] flex items-center justify-center cursor-pointer transition hover:opacity-25 relative active:top-px fill-white-100"
+                >
+                    {{Icon iconName='arrow-right' iconWidth='72' iconHeight='72'}}
+                </div>
+            </div>
+            <div class="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3 swiper-wrapper xl:flex xl:gap-0">
+                {{> user-card/mob-user-card }} {{> user-card/mob-user-card1 }} {{> user-card/mob-user-card2 }}
+                {{> user-card/mob-user-card }} {{> user-card/mob-user-card1 }} {{> user-card/mob-user-card2 }}
+            </div>
         </div>
         <div class="pt-[48px] xl:pt-[84px] flex justify-center items-center">
             <button
